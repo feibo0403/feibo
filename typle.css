@@ -1,0 +1,205 @@
+/* 全局样式重置与基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem 0;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* 简历卡片主体样式 */
+.resume-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* 头部信息样式 */
+.header {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.header .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 1.2rem;
+}
+
+/* 联系方式样式 */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* 章节通用样式 */
+.section {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+/* 章节标题样式 */
+.section-title {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+/* 技能列表样式 */
+.skill-list {
+    list-style: none;
+}
+
+.skill-category {
+    margin-bottom: 1rem;
+}
+
+.skill-category h4 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tag {
+    background: #e3f2fd;
+    color: #2c3e50;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #bbdefb;
+}
+
+/* 经历与项目列表样式 */
+.experience-list, .project-list {
+    list-style: none;
+}
+
+.experience-item, .project-item {
+    margin-bottom: 1.2rem;
+}
+
+.experience-header, .project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+    align-items: center;
+}
+
+.experience-title, .project-title {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.05rem;
+}
+
+.experience-date, .project-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.experience-content, .project-content {
+    padding-left: 0.5rem;
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.7;
+}
+
+/* 教育背景样式 */
+.education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.education-info h4 {
+    color: #2c3e50;
+    margin-bottom: 0.2rem;
+    font-size: 1.05rem;
+}
+
+.education-courses {
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+.education-gpa {
+    color: #3498db;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+/* 响应式适配（移动端） */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .experience-header, .project-header, .education {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .section {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .education-gpa {
+        align-self: flex-start;
+    }
+}
